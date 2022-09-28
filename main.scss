@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+    color: black;
+}
+
+body {
+
+    background: radial-gradient(circle, rgba(136, 238, 227, 1) 0%, rgba(106, 208, 202, 1) 47%, rgba(0, 212, 255, 1) 100%);
+    background-size: contain;
+
+
+    h3 {
+        position: absolute;
+        margin-top: 6%;
+        margin-left: 1%;
+        font-size: 3rem;
+    }
+
+    nav {
+        margin-top: 5%;
+        border-bottom: 3px solid grey;
+    }
+
+    .logo {
+        height: 10rem;
+        width: auto;
+        position: fixed;
+        margin-top: -7%;
+    }
+
+
+    .hat {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        margin-top: 4rem;
+        height: 35rem;
+        width: 25rem;
+        transform: rotateZ(30deg);
+    }
+
+    .main-container {
+        height: 80vh;
+        width: 100vw;
+        // background-color: blue;
+        animation: opacitychange 1s linear;
+
+        .main-form {
+            height: 42rem;
+            width: 32rem;
+            border: 1px solid black;
+            background-color: wheat;
+            border-radius: 5px;
+            margin: 2% 42%;
+            // padding-top: 3rem;
+            // padding-left: 1rem;
+            // padding-right: 2rem;
+            padding-top: 10%;
+            padding-left: 1rem;
+            padding-bottom: 20%;
+            padding-right: 1rem;
+            align-items: center;
+            -webkit-box-shadow: 10px 10px 14px 4px rgba(31, 27, 31, 1);
+            -moz-box-shadow: 10px 10px 14px 4px rgba(31, 27, 31, 1);
+            box-shadow: 10px 10px 14px 4px rgba(31, 27, 31, 1);
+            background: linear-gradient(90deg, rgba(244, 244, 244, 1) 0%, rgba(197, 251, 248, 1) 47%, rgba(178, 242, 255, 1) 100%);
+
+            .userLabel {
+                font-size: 1.6rem;
+                text-transform: uppercase;
+            }
+
+            .userInput {
+                border: none;
+                font-size: 1.2rem;
+                border-bottom: 2px solid black;
+                margin-left: 5%;
+                width: 90%;
+                background-color: aquamarine;
+
+                .user {
+                    padding-top: 2rem;
+                }
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .passLabel {
+                font-size: 1.6rem;
+                text-transform: uppercase;
+            }
+
+            .passInput {
+                border: none;
+                font-size: 1.2rem;
+                margin-left: 5%;
+                border-bottom: 2px solid black;
+                width: 90%;
+                background-color: aquamarine;
+
+                &:focus {
+                    outline: none;
+                }
+            }
+
+            .forgot-password {
+                margin-top: 1rem;
+                margin-left: 70%;
+                margin-bottom: 1rem;
+                color: rgb(83, 83, 83);
+            }
+
+            .login-btn {
+                margin-left: 30%;
+                height: 1rem;
+                width: max-content;
+                border: 1px solid black;
+                background-color: rgb(11, 68, 141);
+                text-decoration: none;
+                padding: 1rem;
+                transition: 0.5s all ease-in;
+
+                &:hover {
+                    transform: scaleX(3);
+                    background-color: rgba(0, 212, 255, 1);
+                }
+
+                &:after {
+                    background-color: rgba(0, 212, 255, 1);
+                }
+            }
+
+            .tutor-btn {
+                height: 1rem;
+                width: max-content;
+                border: 1px solid black;
+                background-color: rgb(11, 68, 141);
+                text-decoration: none;
+                padding: 1rem;
+                padding-bottom: 2rem;
+                transition: 0.3s all ease-out;
+
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.1);
+                    background-color: rgba(0, 212, 255, 1);
+                }
+            }
+        }
+
+        .data-form {
+            background-color: aquamarine;
+            box-shadow: 2px 6px 4px 0px rgba(31, 27, 31, 1);
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+        }
+    }
+
+    footer {
+        height: 5rem;
+        width: 100vw;
+        background-color: black;
+
+        a {
+            display: inline-block;
+            position: absolute;
+            color: white;
+            list-style: none;
+            font-size: 1.5rem;
+            margin-left: 35%;
+
+        }
+
+
+        .second {
+            padding-left: 15rem;
+        }
+
+        .third {
+            padding-left: 40rem;
+        }
+    }
+}
+
+@keyframes opacitychange {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0.1;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    30% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
