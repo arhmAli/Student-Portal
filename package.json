@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "compile:sass": "node-sass main.scss style.css",
+    "compile:student-sass": "node-sass mainStudent.scss mainStudent.css"
+  },
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
