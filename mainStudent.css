@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  animation: opacitychange 1s linear;
+}
+
+body .navbar {
+  height: 15vh;
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+}
+
+body .navbar .logo {
+  height: 8rem;
+  width: auto;
+  position: fixed;
+  padding: 3px;
+  border: 1px solid black;
+  border-radius: 25%;
+}
+
+body .navbar .name {
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-left: 90%;
+}
+
+body .navbar .icon {
+  border: 1px solid black;
+  border-radius: 20%;
+  background-color: beige;
+  padding: 2px;
+  margin-left: 0.5rem;
+}
+
+body .first {
+  display: flex;
+  flex-direction: column;
+  height: 83vh;
+  width: 20vw;
+  justify-content: center;
+  align-items: center;
+  background: #74ebd5;
+  background: linear-gradient(to right, #6c6c6d, #6d7a78);
+}
+
+body .first li {
+  font-size: 1.7rem;
+  font-weight: 600;
+  background-color: grey;
+  margin-bottom: 2rem;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  list-style: none;
+}
+
+body .first span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: underline 1px black;
+}
+
+body .first span:hover {
+  cursor: pointer;
+}
+
+body .second {
+  display: flex;
+  height: 85vh;
+  width: 80vw;
+  background: #ECE9E6;
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  margin-left: 20vw;
+  margin-top: -83vh;
+  transition: 1s ease-out all;
+  animation: movefromleft 1s linear;
+}
+
+body .second .beginner-heading {
+  font-size: larger;
+  font-weight: 800;
+  text-decoration: underline;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+body .second .beginner-paragraph {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-top: 5rem;
+  margin-left: 2rem;
+}
+
+body .second .beginner-paragraph b {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+body .second .progress-btn {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 8rem;
+  margin-left: -18rem;
+  height: 4rem;
+  background-color: #fafa74;
+  width: 13rem;
+}
+
+body .second .progress-btn:hover {
+  cursor: pointer;
+  background-color: #f1f52e;
+  border-radius: 1rem;
+  transition: ease-in 0.5s all;
+}
+
+body .second .info {
+  display: flex;
+  margin-top: 13rem;
+  height: 35rem;
+  width: auto;
+  position: absolute;
+  padding-right: 15rem;
+  padding-left: 5rem;
+  padding-bottom: 1rem;
+  margin-right: 30%;
+  margin-left: 15rem;
+  background: radial-gradient(circle, #8fbdb8 0%, #a5d4d1 47%, #86e1f3 100%);
+  background-size: contain;
+  box-shadow: inset 0px 0px 23px 9px rgba(0, 0, 0, 0.1), 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  border-radius: 5%;
+  box-shadow: 10px 10px 9px -2px rgba(0, 0, 0, 0.75);
+  transition: 1s ease-out all;
+  animation: movefromleft 1s linear;
+}
+
+body .second .info .name-heading {
+  font-size: larger;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 5rem;
+  margin-left: 10rem;
+}
+
+body .second .info .info-name {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 5rem;
+  margin-left: 30rem;
+}
+
+body .second .info .dept-heading {
+  font-size: larger;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 10rem;
+  margin-left: -42rem;
+}
+
+body .second .info .info-dept {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 10rem;
+  margin-left: 30rem;
+}
+
+body .second .info .ch-heading {
+  font-size: larger;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 15rem;
+  margin-left: -56rem;
+}
+
+body .second .info .info-ch {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 15rem;
+  margin-left: 30rem;
+}
+
+body .second .info .sem-heading {
+  font-size: larger;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 20rem;
+  margin-left: -55rem;
+}
+
+body .second .info .info-gpa {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 20rem;
+  margin-left: 35rem;
+  padding-left: 5rem;
+}
+
+body .second .info .cgpa-heading {
+  font-size: larger;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 25rem;
+  margin-left: -55rem;
+}
+
+body .second .info .info-cgpa {
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: underline;
+  margin-top: 25rem;
+  padding-left: 5rem;
+  margin-left: 39rem;
+}
+
+body .second .info .gpa-curr-heading {
+  font-size: larger;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 30rem;
+  margin-left: -55rem;
+}
+
+body .second .info .info-ch-reg {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding-left: 10rem;
+  text-decoration: underline;
+  margin-top: 30rem;
+  margin-left: 20rem;
+}
+
+@keyframes movefromleft {
+  0% {
+    height: 100%;
+    width: 0%;
+  }
+
+  10% {
+    height: 100%;
+    width: 10%;
+  }
+
+  20% {
+    height: 100%;
+    width: 20%;
+  }
+
+  30% {
+    width: 30%;
+  }
+
+  40% {
+    width: 40%;
+  }
+
+  50% {
+    width: 50%;
+  }
+
+  60% {
+    width: 60%;
+  }
+
+  70% {
+    width: 70%;
+  }
+
+  80% {
+    width: 80%;
+  }
+
+  90% {
+    width: 90%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes opacitychange {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
