@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  color: black;
+}
+
+body {
+  /* background: url("https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"), linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(222, 228, 230, 0.7));
+  background-size: cover; */
+  background: linear-gradient(to bottom, rgba(185, 185, 185, 0.4) 0%, rgba(204, 204, 204, 0.9) 100%), url("photo-1523050854058-8df90110c9f1.jpeg");
+  background-size: cover;
+  color: white;
+}
+
+body h3 {
+  position: absolute;
+  margin-top: 13%;
+  margin-left: 3%;
+  font-size: 3rem;
+}
+
+body nav {
+  margin-top: 5%;
+  border-bottom: 3px solid grey;
+}
+
+body .logo {
+  height: 10rem;
+  width: auto;
+  position: fixed;
+  margin-top: -7%;
+}
+
+body .hat {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-top: 12rem;
+  height: 35rem;
+  width: 25rem;
+  transform: rotateZ(30deg);
+}
+
+body .main-container {
+  height: 80vh;
+  width: 100vw;
+  animation: opacitychange 1s linear;
+}
+
+body .main-container .main-form {
+  height: 42rem;
+  width: 36rem;
+  border: 1px solid black;
+  background-color: wheat;
+  border-radius: 5px;
+  margin: 2% 70%;
+  padding-top: 10%;
+  padding-left: 2.5rem;
+  padding-bottom: 20%;
+  padding-right: 2.5rem;
+  align-items: center;
+  -webkit-box-shadow: 10px 10px 14px 4px #1f1b1f;
+  -moz-box-shadow: 10px 10px 14px 4px #1f1b1f;
+  box-shadow: 10px 10px 14px 4px #1f1b1f;
+  background: linear-gradient(90deg, #f4f4f4 0%, #d4e6e5 47%, #b8bfc0 100%);
+}
+
+body .circle {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -51.5%;
+  filter: invert(9%) sepia(100%) saturate(7007%) hue-rotate(257deg) brightness(98%) contrast(131%);
+  color: #2f00ff;
+  margin-bottom: 17%;
+  margin-left: 30%;
+  align-self: center;
+  width: 15rem;
+  height: 12rem;
+  transform: rotateX(180deg);
+}
+
+body .circleTwo {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-top: 2.7%;
+  filter: invert(52%) sepia(62%) saturate(567%) hue-rotate(143deg) brightness(105%) contrast(90%);
+  color: #2f00ff;
+  margin-bottom: 17%;
+  margin-left: 9rem;
+  align-self: center;
+  width: 15rem;
+  height: 12rem;
+}
+
+body .main-container .main-form .userLabel {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+body .main-container .main-form .userInput {
+  border: none;
+  font-size: 1.2rem;
+  border-bottom: 2px solid black;
+  margin-left: 5%;
+  width: 90%;
+  background-color: rgb(216, 219, 218);
+}
+
+body .main-container .main-form .userInput .user {
+  padding-top: 2rem;
+}
+
+body .main-container .main-form .userInput:focus {
+  outline: none;
+}
+
+body .main-container .main-form .passLabel {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+body .main-container .main-form .passInput {
+  border: none;
+  font-size: 1.2rem;
+  margin-left: 5%;
+  border-bottom: 2px solid black;
+  width: 90%;
+  background-color: rgb(216, 219, 218);
+}
+
+body .main-container .main-form .passInput:focus {
+  outline: none;
+}
+
+body .main-container .main-form .forgot-password {
+  margin-top: 1rem;
+  margin-left: 70%;
+  margin-bottom: 1rem;
+  color: #535353;
+}
+
+body .main-container .main-form .login-btn {
+  margin-left: 30%;
+  height: 1rem;
+  width: max-content;
+  border: 1px solid black;
+  background-color: #0b448d;
+  text-decoration: none;
+  padding: 1rem;
+  transition: 0.5s all ease-in;
+}
+
+body .main-container .main-form .login-btn:hover {
+  transform: scaleX(3);
+  background-color: #00d4ff;
+}
+
+body .main-container .main-form .login-btn:after {
+  background-color: #00d4ff;
+}
+
+body .main-container .main-form .tutor-btn {
+  height: 1rem;
+  width: max-content;
+  border: 1px solid black;
+  background-color: #0b448d;
+  text-decoration: none;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  transition: 0.3s all ease-out;
+}
+
+body .main-container .main-form .tutor-btn:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #00d4ff;
+}
+
+body .main-container .data-form {
+  background-color: rgb(216, 219, 218);
+  box-shadow: 2px 6px 4px 0px #1f1b1f;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+body footer {
+  height: 5rem;
+  width: 100vw;
+  background-color: black;
+}
+
+body footer a {
+  display: inline-block;
+  position: absolute;
+  color: white;
+  list-style: none;
+  font-size: 1.5rem;
+  margin-left: 35%;
+}
+
+body footer .second {
+  padding-left: 15rem;
+}
+
+body footer .third {
+  padding-left: 40rem;
+}
+
+@keyframes opacitychange {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  30% {
+    opacity: 0.3;
+  }
+
+  40% {
+    opacity: 0.4;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  60% {
+    opacity: 0.6;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  80% {
+    opacity: 0.8;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
